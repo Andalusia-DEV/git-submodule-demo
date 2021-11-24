@@ -1,18 +1,16 @@
 <template>
-  <h1></h1>
+  <h1>Git sub module POC (Prove Of Concept)</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptate laborum consequatur doloremque tenetur voluptatibus.</p>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import { welcome } from "../utils/logger";
+// import { sum } from "../utils/sum";
 
 export default {
   name: "App",
-  // components: {
-  //   HelloWorld
-  // }
-  mounted: {},
+  mounted() {
+    // console.log(sum(2, 3));
+  },
 };
 </script>
 
