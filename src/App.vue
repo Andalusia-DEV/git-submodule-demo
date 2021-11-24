@@ -4,12 +4,13 @@
 </template>
 
 <script>
-// import { sum } from "../utils/sum";
+import { sum } from "../utils/sum";
 
 export default {
   name: "App",
   mounted() {
-    // console.log(sum(2, 3));
+    const sumResult = sum(2, 3);
+    console.log(sumResult);
   },
 };
 </script>
