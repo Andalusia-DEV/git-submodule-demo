@@ -19,11 +19,6 @@ git submodule add <link/ssh URL of submodule repo>
 3. Notice two changes (.gitmodules file added, new directory added with submodule name).
 4. Now use the submodule as it a part of your source code.
 
-## **Note**: Submodule workflows
-
-- **Once submodules are properly initialized and updated within a parent repository they can be utilized exactly like stand-alone repositories. This means that submodules have their own branches and history.**
-- **When making changes to a submodule it is important to publish submodule changes and then update the parent repositories reference to the submodule.**
-
 ## Removing a submodule
 
 ```
@@ -68,14 +63,22 @@ git rm -f dir/of/submodule
 
 ![pulling changes](./screenshots/adding-remote-changes-2.png)
 
+## **Note**: Submodule workflows
+
+- Once submodules are properly initialized and updated within a parent repository they can be utilized exactly like stand-alone repositories.
+
+- This means that submodules have their own branches and history.
+
+- When making changes to a submodule it is important to publish submodule changes and then update the parent repositories reference to the submodule.
+
 ## **Importnat note using git submodules as a team**
 
-When working with submodules, a common pattern of confusion and error is forgetting to push updates for remote users.
+- When working with submodules, a common pattern of confusion and error is forgetting to push updates for remote users.
 
-If we revisit the utils work we just did, and only pushed the updates to the parent repository.
+- If we revisit the utils work we just did, and only pushed the updates to the parent repository.
 
-Another developer would go to pull the latest parent repository and it would be pointing at a commit of awesomelibrary that they were unable to pull because we had forgotten to push the submodule.
+- Another developer would go to pull the latest parent repository and it would be pointing at a commit of awesomelibrary that they were unable to pull because we had forgotten to push the submodule.
 
-This would break the remote developers local repo.
+- This would break the remote developers local repo.
 
-To avoid this failure scenario make sure to always commit and push the submodule and parent repository.
+- To avoid this failure scenario make sure to always commit and push the submodule and parent repository.
