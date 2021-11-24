@@ -33,3 +33,11 @@ git rm -f dir/of/submodule
 ```
 
 ## Changes history
+
+1. new submodule added (utils).
+
+![adding submodule command](./new-submodule-1.png)
+
+2. changes in parent repo.
+
+![changes in parent repo](./new-submodule-2.png)
